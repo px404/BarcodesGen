@@ -1,9 +1,10 @@
-import barcode
-from barcode.writer import ImageWriter
-from datetime import datetime
 import os
 
 os.system('cmd /c "pip install -r libs.txt"')
+
+import barcode
+from barcode.writer import ImageWriter
+from datetime import datetime
 
 def bar_gen(data,iteration):
     ts = str(datetime.now().strftime("%H-%M-%S"))
